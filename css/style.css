@@ -9,7 +9,7 @@ body {
   background: #f59cae;
 }
 .page-container {
-  background: url(/Img/bg-bathroom.png) no-repeat;
+  background: url(./Img/bg-bathroom.png) no-repeat;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 435px;
