@@ -3,23 +3,27 @@ li {
   list-style: none;
 }
 body {
+    overflow-x:hidden; 
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: #f59cae;
+  background: linear-gradient(176.56deg, #EF5E83 -10.6%, #B265FF 40.25%, #FF97E8 106.35%, #FFE297 106.35%) no-repeat;
 }
 .page-container {
-  background: url(../Img/bg-bathroom.png) no-repeat;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 435px;
+  max-width: 1200px;
   margin: 0 auto;
+  align-self: center;
 }
 header {
+margin-bottom: 150px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 .logo {
   width: auto;
@@ -69,11 +73,26 @@ i {
   text-align: center;
   display: flex;
 }
+.locations{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto  ;
+    justify-content: space-between;
+}
 .location-page {
-  margin-top: 260px;
+    margin: 20px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 480px;
+    transition: 0.1s;
 }
 .location-page__decribe {
-  margin-left: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+     margin-left: 20px;
 }
 
 .inspiration-tag {
@@ -114,11 +133,6 @@ i {
   padding: 9px 32px 8px 33px;
   transition: 1.5s;
 }
-.empty {
-  display: block;
-  height: 130px;
-  width: 100%;
-}
 .inspiration-page_button:hover {
   background: linear-gradient(
     92.02deg,
@@ -126,11 +140,19 @@ i {
     rgba(112, 0, 255, 0.2997) 109.43%
   );
 }
-.location-image {
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+.location-img-container{
+    position: relative;
+    max-width: 300px;
+    max-height: 280px;
+    z-index: 1;
 }
-.bounce-2 {
+.location-image{
+    max-width: 300px;
+}
+
+.animate {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   animation-name: bounce-2;
   animation-timing-function: ease;
 }
@@ -145,3 +167,63 @@ i {
     transform: translateY(0);
   }
 }
+
+
+
+.pianka{
+    z-index: 0;
+    position: absolute;
+    right: 15px;
+    filter: blur(3.5px);
+}
+.paczek1{
+    
+    filter: blur(0.5px);
+    z-index: 0;
+    position: absolute;
+    top: 500px;
+    left: 75px;
+    transform: scale(1);
+    
+}
+.paczek2{
+    filter: blur(0.5px);
+    z-index: 0;
+    position: absolute;
+    top: 950px;
+    right: 75px;
+    transform: scale(1);
+}
+.paczek3{
+    filter: blur(0.5px);
+    z-index: 0;
+    position: absolute;
+    top: 1800px;
+    left: 49px;
+    transform: scale(1);
+}
+.location-page:hover  {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+
+@media  (max-width: 410px) {
+    .media__inner:not(:last-child) {
+        margin-right: 7px;
+    }
+    .lang-buttons {
+        margin-right: 8px;
+    }
+    i{
+        font-size: 12px;
+    }
+    header {
+        margin-bottom: 150px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+    }
+    .menu{
+       padding: 0px;
+    }
+  }
