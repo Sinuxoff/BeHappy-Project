@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap");
+li {
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #f59cae;
+}
+.page-container {
+  background: url(/Img/bg-bathroom.png) no-repeat;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 435px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.logo {
+  width: auto;
+  height: 80px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.media {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.lang-buttons {
+  margin-right: 15px;
+}
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin: 2px;
+  font-weight: 600;
+}
+.media__inner {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  color: #f59cae;
+  border-radius: 50%;
+  display: block;
+}
+.media__inner:last-child {
+  color: #fff;
+  background-color: #ff6f8c;
+  font-size: 16px;
+}
+.media__inner:not(:last-child) {
+  margin-right: 10px;
+}
+i {
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.location-page {
+  margin-top: 260px;
+}
+.location-page__decribe {
+  margin-left: 20px;
+}
+
+.inspiration-tag {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+.location-tittle {
+  font-weight: 900;
+  font-size: 50px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.location-description {
+  max-width: 300px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.inspiration-page_button {
+  background: linear-gradient(
+    92.02deg,
+    rgba(255, 255, 255, 0.3078) 6.47%,
+    rgba(255, 255, 255, 0.2997) 109.43%
+  );
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+  padding: 9px 32px 8px 33px;
+  transition: 1.5s;
+}
+.empty {
+  display: block;
+  height: 130px;
+  width: 100%;
+}
+.inspiration-page_button:hover {
+  background: linear-gradient(
+    92.02deg,
+    rgba(78, 255, 202, 0.3078) 6.47%,
+    rgba(112, 0, 255, 0.2997) 109.43%
+  );
+}
+.location-image {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
